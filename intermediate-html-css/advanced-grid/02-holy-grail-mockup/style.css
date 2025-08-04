@@ -26,6 +26,7 @@
 
 .sidebar {
   background-color: #C50208;
+  grid-row: 2 / 3;
 }
 
 .sidebar .photo {
@@ -88,4 +89,57 @@
 .footer p {
   font-size: 13px;
   font-weight: normal;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+
+.logo {
+  display: grid;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: 1 / -1;
+}
+
+.sidebar {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  gap: 50px;
+}
+
+.article {
+  grid-column: 2 / 3;
+}
+
+.footer {
+  grid-column: 1 / -1;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
